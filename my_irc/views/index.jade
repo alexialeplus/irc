@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  header
+    h1 Little talks
+    hr
+    h4 Raise your voice !
+  #login
+    h2 Welcome !
+    p Register
+    form(action='/', method='post', class='form_login', id='register')
+      input(type='text', name='pseudo', id='pseudo_reg', placeholder='Pseudo', required)
+      input(type='text', name='mail', id='mail', placeholder='Mail', required)
+      input(type='password', name='password', id='password', placeholder='Password', required)
+      br
+      p(id='error') #{error_reg}
+      input(type='submit', value='Ok')
+    p Or log in
+    form(action='/', method='post', class='form_login', id='log')
+      input(type='text', name='pseudo', id='pseudo_log', placeholder='Pseudo', required)
+      input(type='password', name='password', id='password', placeholder='Password', required)
+      br
+      p(id='error') #{error_log}
+      input(type='submit', value='Ok')

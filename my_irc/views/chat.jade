@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  header
+    nav
+      a(href='/logout') Logout
+      a(href='/user') My account
+    h1 Little talks
+    hr
+    h4 Raise your voice !
+  section
+    #chat
+      #chat_window
+      form(action='', class='form_chat')
+        input(type='text', name='message', id='message')
+        input(type='submit', value='Send')
+        input(type='hidden', value='#{pseudo}', id='hidden')

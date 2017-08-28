@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  header
+    nav
+      a(href='/logout', id='logout') Logout
+      a(href='/chat', id='home') Home
+    h1 Little talks
+    hr
+    h4 My account
+  section
+    div(id='sectionUser')
+      form(action='/user', id='editUser', method='post')
+        label Pseudo :
+        br 
+        input(type='text', name='pseudo', id='editPseudo', value='#{pseudo}')
+        br
+        label Email :
+        br
+        input(type='email', name='email', id='editMail', value='#{email}')
+        br
+        label New password :
+        br
+        input(type='password', name='password', id='editPassword', required)
+        br
+        label Confirmation password :
+        input(type='password', name='confirmationPassword', required)
+        br
+        p(id='error') #{error} #{succeed}
+        input(type='submit', value='Change these informations', id='editSubmit')

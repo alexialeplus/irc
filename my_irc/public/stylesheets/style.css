@@ -1,0 +1,155 @@
+html {
+	background-image: url('/images/background.jpeg');
+}
+
+header :not(nav) {
+	text-align: center;
+}
+
+nav {
+	height: 50px;
+}
+
+button, a {
+	float: right;
+	font-family: 'Open Sans Condensed', sans-serif;
+	background: linear-gradient(#FDFEFE, #BFC0C0);
+	width: 6%;
+	height: 70%;
+	font-size: 20px;
+	border: 1px solid;
+	border-radius: 5px;
+	box-shadow: 1px -2px 0 rgba( 1, 1, 1, 0.4);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+button:hover, a:hover {
+	box-shadow: none;
+}
+
+a:visited {
+	color: black;
+}
+
+a {
+	color: black;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 70px;
+	clear: both;
+}
+
+hr {
+	color: black;
+	border: none;
+	border: 1px black solid;
+	margin-left: 30%;
+	margin-right: 30%;
+} 
+
+h4 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+	font-size: 22px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+input[type=text], input[type=password], input[type=email] {
+	padding-bottom: 1.9%;
+	padding-top: 2.4%;
+	padding-left: 1%;
+	width: 78.5%;
+	border-radius: 5px;
+	border: 1px solid black;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+input[type=submit] {
+	padding-bottom: 1.5%;
+	padding-top: 1.5%;
+	margin-top: 1%;
+	width: 20%;
+	background-color: #754D6F;
+	background: linear-gradient(#7A5275, #452F56);
+	color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+span {
+	color: white;
+	font-weight: bold;
+}
+
+#sectionUser {
+	width: 40%;
+	text-align: center;
+	margin: auto;
+	background-color: rgba(253, 254, 254, 0.2);
+	border-radius: 5px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding: 1%;
+}
+
+#sectionUser label {
+	font-size: 20px;
+}
+
+#sectionUser input[type=text], #sectionUser input[type=password], #sectionUser input[type=email] {
+	margin: 1%;
+}
+
+#chat {
+	width: 40%;
+	height: 500px;
+	background-color: rgba(253, 254, 254, 0.2);
+	margin: auto;
+	border-radius: 5px;
+}
+
+#chat_window {
+  width: 100%;
+  height: 450px;
+  padding-top: 1%;
+	padding-left: 3%;
+	padding-right: 1%;
+}
+
+#chat_window p {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#login {
+	text-align: center;
+	background-color: rgba(253, 254, 254, 0.2);
+	width: 40%;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 3%;
+	padding-bottom: 1%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#login p {
+	font-size: 20px;
+}
+
+#error {
+	color: white;
+	font-size: 22px;
+}
+
+#userAccount {
+	font-size: 14px;
+}
+
+#global {
+	color: #A60006;
+}
